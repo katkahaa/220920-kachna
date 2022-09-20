@@ -27,7 +27,7 @@ namespace _220920_kachna
         public static bool IsPrimeNumber(int number)
         {
             bool isPrime = true;
-            for (int i = 2; i < number/2; i++)
+            for (int i = 2; i < Math.Sqrt(number); i++)
             {
                 if (number % i == 0)
                     return false;
